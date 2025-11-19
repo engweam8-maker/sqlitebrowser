@@ -1,0 +1,15 @@
+-- إنشاء جدول المرضى
+CREATE TABLE IF NOT EXISTS Patients (
+    id TEXT PRIMARY KEY,
+    name TEXT NOT NULL,
+    age INTEGER NOT NULL,
+    condition TEXT NOT NULL,
+    notes TEXT
+);
+
+-- إدخال بيانات تجريبية
+INSERT INTO Patients (id, name, age, condition, notes)
+VALUES 
+('patient_123', 'Ahmad Saleh', 42, 'Hypertension', 'Morning meds, regular check-up'),
+('patient_456', 'Lama N.', 29, 'Diabetes Type 1', 'Insulin schedule tracked'),
+('patient_789', 'Yousef T.', 64, 'COPD', 'Needs inhaler on standby');
